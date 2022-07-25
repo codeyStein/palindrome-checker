@@ -37,7 +37,7 @@ body {
 }
 
 
-/*   
+/*   INPUT   */
 #input {
 	border-radius: 0;
 	width: 300px;
@@ -52,9 +52,32 @@ body {
 
 #input:focus {
 	border-radius: 3px;
-	border: 5px solid var(--clr-grey);
+	border: 3px solid var(--clr-blue);
 	outline: none;
 }
 
 ::placeholder { color: #ddd; }
 
+
+/*   BUTTON   */
+#button {
+	background: none;
+	width: 120px;
+	height: 37px;
+	font-size: 1rem;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	border: 5px solid var(--clr-blue);
+	text-align: center;
+	transition: 100ms ease-out;
+}
+
+#button:hover,#button:focus {
+	background-color: var(--clr-blue);
+	color: #fff;
+	outline: none;
+}
+
+#button:active {
+	transform: scale(0.9);
+}
